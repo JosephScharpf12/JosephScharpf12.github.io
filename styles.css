@@ -75,23 +75,23 @@ nav ul li a:hover {
 }
 
 .emerge-text {
-    font-size: 7rem;
+    font-size: min(7rem, 15vw);
     font-family: Arial, sans-serif;
     color: #fff;
     font-weight: 800;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     opacity: 0;
     animation: appear 2s ease-out forwards;
-    margin-bottom: 50px;
+    margin-bottom: min(50px, 10vh);
 }
 
 /* About page specific style */
 .hero .emerge-text.about-text {
-    font-size: 4rem;
+    font-size: min(4rem, 8vw);
     font-family: Arial, sans-serif;
     font-weight: 800;
     white-space: nowrap;
-    margin-bottom: 50px;
+    margin-bottom: min(50px, 10vh);
 }
 
 /* Remove the absolute positioning for about page nav */
@@ -107,8 +107,8 @@ nav ul li a:hover {
 .hero-nav a {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    font-size: 1.8rem;
-    margin: 0 30px;
+    font-size: min(1.8rem, 5vw);
+    margin: 0 clamp(15px, 3vw, 30px);
     padding: 5px 10px;
     transition: all 0.3s ease;
     font-weight: 700;
@@ -247,18 +247,18 @@ button:hover {
 
 /* Social Links */
 .social-links {
-    margin-bottom: 40px;
+    margin-bottom: min(40px, 8vh);
     opacity: 0;
     animation: fadeIn 1s ease-out 1s forwards;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: clamp(20px, 5vw, 40px);
 }
 
 .social-links a {
     color: #fff;
-    font-size: 3rem;
+    font-size: min(3rem, 8vw);
     transition: all 0.3s ease;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -312,17 +312,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .emerge-text {
-        font-size: 3.5rem;
-    }
-
-    .hero-nav a {
-        font-size: 1.4rem;
-        margin: 0 15px;
-    }
-
-    .social-links a {
-        font-size: 2.5rem;
-        margin: 0 15px;
+    .container {
+        padding: 0 15px;
     }
 } 
