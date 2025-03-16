@@ -9,9 +9,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #fff;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #9b4dca, #2ecc71, #3498db);
+    background: linear-gradient(-45deg, #ee7752, #ffa41b, #ffd700, #e73c7e, #23a6d5, #ff8c00, #23d5ab, #9b4dca, #ff6b6b);
     background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
+    animation: gradient 15s ease infinite;
 }
 
 .container {
